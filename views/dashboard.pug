@@ -1,0 +1,197 @@
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Kanben Board
+  link(rel='stylesheet' href='style.css')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js' integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2' crossorigin='anonymous')
+.vverh Доска
+.container
+  .row.align-items-start
+    .col
+      figure.figure
+        button.process
+          figcaption.figure-caption Новые
+        button.plus
+        input#bokovon-lodsaba(type='checkbox')
+        .bokovaya-kapanel
+          label.nogamlenu-knopki-2(for='bokovon-lodsaba') +
+          .vobocuka-kagolovok Добавить задачу
+          p
+            .vobocuka-kagolovok1 Название задачи:
+          p
+            .vobocuka-kagolovok1 Дата:
+              input(name='guruweba_example_date' type='date')
+          p
+            .vobocuka-kagolovok1 Автор: 
+              img.ava(src='ava.png' alt='Responsive image')
+          p
+            .panel1 Пункты:
+              p
+                input(type='checkbox' name='a' value='Сделать обложку')
+                | Сделать обложку
+              p
+                input(type='checkbox' name='a' value='Разработать код')
+                |  Разработать код
+                p
+                  | Добавить 
+                  input(name='guruweba_example_text' type='text')
+                  input(name='guruweba_example_submit' type='submit' value='Отправить')
+                  div
+                    input(name='guruweba_example_submit' type='submit' value='Сохранить')
+    .nogamlenu-knopki-1-wr
+      label.nogamlenu-knopki-1(for='bokovon-lodsaba')
+        .side-b.side-open +
+        .side-b.side-close +
+    br
+    button.zadacha
+    input#side-checkbox(type='checkbox')
+    .side-panel
+      label.side-button-2(for='side-checkbox') +
+      .side Открытая задача
+      p
+        .panel
+          | Название задачи:
+        .panel1
+          | Описание задачи:
+          input(type='checkbox' name='a' value='Сделать обложку')
+        .panel1
+          | Дата: 
+          input(name='guruweba_example_date' type='date')
+        .panel1
+          | Выполняет: 
+          img.ava(src='ava.png' alt='Responsive image')
+        .panel1
+          | Пункты:
+          p
+            input(type='checkbox' name='a' value='Сделать обложку')
+            |  Сделать обложку
+          p
+            input(type='checkbox' name='a' value='Разработать код')
+            |  Разработать код
+          div
+            p
+              | Добавить
+              input(name='guruweba_example_text' type='text')
+              input(name='guruweba_example_submit' type='submit' value='Отправить')
+          p
+        .panel1
+          | Комментарии:
+          p
+          img.ava(src='ava.png' alt='Responsive image')
+          | Как сделать???
+          p
+          img.ava(src='ava.png' alt='Responsive image')
+          | Поменять...
+          input(name='guruweba_example_text' type='text')
+          input(name='guruweba_example_submit' type='submit' value='Отправить')
+  .side-button-1-wr
+    label.side-button-1(for='side-checkbox')
+      .side-b.side-open Открыть задачу
+      .side-b.side-close Закрыть задачу
+  p.a Название задачи:
+  p.a Краткое описание:
+  br
+  p.a Дата:
+    img.zad(src='zadacha.png' alt='Responsive image')
+    |                 0/5
+    img.comment(src='comment.png' alt='Responsive image')
+    |                 3
+    img.ava(src='ava.png' alt='Responsive image')
+.col
+  figure.figure
+    br
+    button.zadacha
+      p.a Название задачи
+      p.a Краткое описание
+      p.a Дата:
+        img.zad(src='zadacha.png' alt='Responsive image')
+        |                 0/5
+        img.comment(src='comment.png' alt='Responsive image')
+        |                 3
+        img.ava(src='ava.png' alt='Responsive image')
+.row.align-items-start
+  .col
+    figure.figure
+      button.process
+        figcaption.figure-caption Выполняются
+      button.plus +
+      br
+      button.zadacha
+        p.a Название задачи
+        p.a Краткое описание
+        p.a Дата:
+          img.zad(src='zadacha.png' alt='Responsive image')
+          |                 0/5
+          img.comment(src='comment.png' alt='Responsive image')
+          |                 3
+          img.ava(src='ava.png' alt='Responsive image')
+    .col
+      figure.figure
+        br
+        button.zadacha
+          p.a Название задачи
+          p.a Краткое описание
+          p.a Дата:
+            img.zad(src='zadacha.png' alt='Responsive image')
+            |                 0/5
+            img.comment(src='comment.png' alt='Responsive image')
+            |                 3
+            img.ava(src='ava.png' alt='Responsive image')
+.row.align-items-start
+  .col
+    figure.figure
+      button.process
+        figcaption.figure-caption Проверяются
+      button.plus +
+      br
+      button.zadacha
+          p.a Название задачи
+          p.a Краткое описание
+          p.a Дата:
+            img.zad(src='zadacha.png' alt='Responsive image')
+            |                 0/5
+            img.comment(src='comment.png' alt='Responsive image')
+            |                 3
+            img.ava(src='ava.png' alt='Responsive image')
+    .col
+      figure.figure
+        br
+        button.zadacha
+          p.a Название задачи
+          p.a Краткое описание
+          p.a Дата:
+            img.zad(src='zadacha.png' alt='Responsive image')
+            |                 0/5
+            img.comment(src='comment.png' alt='Responsive image')
+            |                 3
+            img.ava(src='ava.png' alt='Responsive image')
+.row.align-items-start
+  .col
+    figure.figure
+      button.process
+        figcaption.figure-caption Сделаны
+      button.plus +
+      br
+      button.zadacha
+          p.a Название задачи
+          p.a Краткое описание
+          p.a Дата:
+            img.zad(src='zadacha.png' alt='Responsive image')
+            |                 0/5
+            img.comment(src='comment.png' alt='Responsive image')
+            |                 3
+            img.ava(src='ava.png' alt='Responsive image')
+    .col
+      figure.figure
+        br
+        button.zadacha
+          p.a Название задачи
+          p.a Краткое описание
+          p.a Дата:
+            img.zad(src='zadacha.png' alt='Responsive image')
+            |                 0/5
+            img.comment(src='comment.png' alt='Responsive image')
+            |                 3
+            img.ava(src='ava.png' alt='Responsive image')
+.container-fluid
+  footer 2022 &copy; Influence - Designed by Dashboard
